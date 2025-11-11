@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>California Housing Predictor</title>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="app.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input { margin-bottom: 10px; width: 100px; }
+        button { padding: 5px 15px; }
+        .result { margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>California Housing Predictor</h1>
+    <p>Enter property details:</p>
+    <label>MedInc: <input type="number" id="MedInc" value="8.3"></label><br>
+    <label>HouseAge: <input type="number" id="HouseAge" value="40"></label><br>
+    <label>AveRooms: <input type="number" id="AveRooms" value="6"></label><br>
+    <label>AveBedrms: <input type="number" id="AveBedrms" value="1"></label><br>
+    <label>Population: <input type="number" id="Population" value="1000"></label><br>
+    <label>AveOccup: <input type="number" id="AveOccup" value="3"></label><br>
+    <label>Latitude: <input type="number" id="Latitude" value="34"></label><br>
+    <label>Longitude: <input type="number" id="Longitude" value="-118"></label><br>
+    <button id="predictBtn">Predict Median House Value</button>
+    <div class="result" id="result"></div>
+</body>
+</html>
